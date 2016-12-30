@@ -1,0 +1,34 @@
+* { margin: 0; padding: 0; box-sizing: border-box}
+html{font-size: 16.25%}
+li { list-style: none}
+body,html { height: 100%; overflow: hidden}
+.page, .header, .content, .footer,.subHeader { position: absolute; left: 0; width: 100%; }
+.page { bottom: 0; overflow: hidden; top:0;}
+
+.header { background: #a61615;color:white;top: 0; height: 50px; border-bottom: 1px solid #ccc; font-size: 20px; line-height: 50px; display: flex; text-align: center}
+.header-btn { width: 60px;}
+.header-tit { flex: 1;}
+.subHeader{height:30px;top:50px;white-space:nowrap;overflow-x:auto;background: #9a9fa5;color:white}
+.subHeader li{display:inline-block;width:16%;height:30px;text-align:center;line-height: 30px;}
+.content { top: 50px; bottom: 50px;}
+.shopbox{width: 100%;height:100%;overflow-y:scroll}
+.shopboxscroll{width: 100%;height:100%;overflow: hidden;position: relative}
+.shoplist{width: 100%;height:auto;overflow: hidden}
+.shoplist li{box-sizing:border-box;-moz-box-sizing:border-box; -webkit-box-sizing:border-box;width:50%;float:left;padding:20px 10px}
+.pic{width: 100%;box-shadow: 0 0 1px #000;display: block;padding: 6px;height:13rem}
+.pic img{width: 100%;height:100%}
+.footer { bottom: 0; height: 50px; line-height: 50px; border-top:1px solid #ccc;background: #484850;color:white}
+.footer li { float: left; width: 20%; text-align: center;}
+.footer li.active{background: red}
+.pro-name{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;font-size: 12px;}
+
+/*登录部分*/
+
+.login-list { padding: 10px; font-size: 14px;}
+.login-list li { padding: 5px;}
+.text-bar { width: 100%; height: 40px; padding: 13px;}
+label{margin-right:10px}
+.go-forget { margin: 0 10px;}
+
+.login-in,.go-reg { display: block;width: 100%; height: 40px; line-height: 40px; text-align: center; background-color: #333; color:#Fff}
+.go-reg {background-color: #ccc;}

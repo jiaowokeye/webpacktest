@@ -4,6 +4,12 @@ import { createStore } from 'redux';
 import { Provider, connect } from 'react-redux';
 
 // React component
+/**
+ * 
+ * 
+ * @class Counter
+ * @extends {React.Component}
+ */
 class Counter extends React.Component {
   render(){
     const { value, onIncreaseClick } = this.props;
@@ -21,6 +27,13 @@ class Counter extends React.Component {
 const increaseAction = {type: 'increase'};
 
 // Reducer:
+/**
+ * 
+ * 
+ * @param {any} [state={count: 0}]
+ * @param {any} action
+ * @returns
+ */
 function counter(state={count: 0}, action) {
   let count = state.count;
   switch(action.type){
